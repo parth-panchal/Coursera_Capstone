@@ -12,7 +12,7 @@ This Project aims to create an analysis of features for people migrating to Scar
 ## Data Selection
 Data Link: https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M
 
-I have used data scraped from "List of Postal Codes of Canada" Wiki page.
+I have used data scraped from the "List of Postal Codes of Canada" Wiki page.
 
 ### Foursquare API Data:
 I needed data about different venues in different neighborhoods of that specific borough. In order to gain that information I used "Foursquare" locational information. Foursquare is a location data provider with information about all manner of venues and events within an area of interest. Such information includes venue names, locations, menus and even photos. As such, the foursquare location platform was used as the sole data source since all the stated required information was obtained through the API.
