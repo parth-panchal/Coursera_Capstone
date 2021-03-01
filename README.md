@@ -12,12 +12,12 @@ This Project aims to create an analysis of features for people migrating to Scar
 ## Data Selection
 Data Link: https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M
 
-We will use data scraped from List of Postal Codes of Canada Wiki page.
+I have used data scraped from "List of Postal Codes of Canada" Wiki page.
 
 ### Foursquare API Data:
-We will need data about different venues in different neighborhoods of that specific borough. In order to gain that information we will use "Foursquare" locational information. Foursquare is a location data provider with information about all manner of venues and events within an area of interest. Such information includes venue names, locations, menus and even photos. As such, the foursquare location platform will be used as the sole data source since all the stated required information can be obtained through the API.
+I needed data about different venues in different neighborhoods of that specific borough. In order to gain that information I used "Foursquare" locational information. Foursquare is a location data provider with information about all manner of venues and events within an area of interest. Such information includes venue names, locations, menus and even photos. As such, the foursquare location platform was used as the sole data source since all the stated required information was obtained through the API.
 
-After finding the list of neighborhoods, we then connect to the Foursquare API to gather information about venues inside each and every neighborhood. For each neighborhood, we have chosen the radius to be 100 meters.
+After finding the list of neighborhoods, I then connected to the Foursquare API to gather information about venues inside each and every neighborhood. For each neighborhood, I chose the radius to be 100 meters.
 
 The data retrieved from Foursquare contained information of venues within a specified distance of the longitude and latitude of the postcodes. The information obtained per venue as follows:
 *  Neighborhood
@@ -32,10 +32,10 @@ The data retrieved from Foursquare contained information of venues within a spec
 ## Methodology
 
 ### Clustering Approach:
-To compare the similarities of two cities, we decided to explore neighborhoods, segment them, and group them into clusters to find similar neighborhoods in a big city like New York and Toronto. To be able to do that, we need to cluster data which is a form of unsupervised machine learning: K-means Clustering algorithm.
+To compare the similarities of two cities, I decided to explore neighborhoods, segment them, and group them into clusters to find similar neighborhoods in a big city like New York and Toronto. To be able to do that, I needed to cluster data which was a form of unsupervised machine learning: K-means Clustering algorithm.
 
 ### Work Flow:
-Using credentials of the Foursquare API, features of near-by places of the neighborhoods would be mined. Due to http request limitations the number of places per neighborhood parameter would reasonably be set to 100 and the radius parameter would be set to 500.
+Using credentials of the Foursquare API, features of near-by places of the neighborhoods were mined. Due to http request limitations the number of places per neighborhood parameter was reasonably be set to 100 and the radius parameter was set to 500.
 
 ## Results
 
@@ -47,13 +47,12 @@ This project has used the Four-square API as its prime data gathering source as 
 
 ## Discussion
 
-### Problem Which Tried to Solve:
+### Problem Which I Tried to Solve:
 The major purpose of this project, is to suggest a better neighborhood in a new city for the person who are shiffting there. Social presence in society in terms of like minded people. Connectivity to the airport, bus stand, city center, markets and other daily needs things nearby.
 * Sorted list of house in terms of housing prices in a ascending or descending order
-* Sorted list of schools in terms of location, fees, rating and reviews
 
 ## Conclusion
-In this project, using the K-means Clustering algorithm, I separated the neighborhood into 10 different clusters for 103 different latitude and longitude points from the dataset, which have similar neighborhoods around them. Using the chart above, results of a particular neighborhood based on average house prices are presented.
+In this project, using the K-means Clustering algorithm, I separated the neighborhood into 10 different clusters for 103 different latitude and longitude points from the dataset, which have similar neighborhoods around them. Using the chart generated, results of a particular neighborhood based on average house prices are presented.
 
 I feel rewarded with the efforts and believe this course with all the topics covered is well worthy of appreciation. This project has shown me a practical application to resolve a real situation that has impacting personal and financial impact using Data Science tools. The mapping with Folium is a very powerful technique to consolidate information and make the analysis and decision better with confidence.
 
